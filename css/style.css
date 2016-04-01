@@ -1,3 +1,10 @@
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
 body{
 	font-family: 'Open Sans', sans-serif;
 }
@@ -13,6 +20,9 @@ body{
 	float: right;
 	text-align: center;
 	margin-right: 100px;
+	font-size: 16px;
+	letter-spacing: 0.03em;
+	-webkit-font-smoothing: antialiased;
 }
 
 strong{
