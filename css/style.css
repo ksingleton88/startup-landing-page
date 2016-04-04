@@ -42,9 +42,7 @@ li{
 	vertical-align: baseline;
 }
 
-ul{
-	list-style: none;
-}
+
 
 .logo{
 	width: 4%;
@@ -70,16 +68,13 @@ ul{
 	margin-top: 12rem;
 }
 
-.content h1{
-	color: white;
-	text-align: center;
-	font-weight: 300;
-}
+.content h1,
 .content h3{
 	color: white;
 	text-align: center;
 	font-weight: 300;
 }
+
 
 .content{
 	overflow: hidden;
@@ -127,9 +122,31 @@ button:hover{
 	padding: 20px;
 }
 
-.cases .devices{
-	display: in
+.icons{
+	display: inline-block;
+	margin: 0 auto;
+	color: #000000;
+	text-align: center;
+	width: 40%;
+	
 }
+
+
+.content-social{
+	width: 100%;
+	height:400px;
+	color: #000000;
+	
+}
+
+.fa-stack{
+	border: solid;
+	border-color: #000000;
+	margin: 10px; 
+	border-radius: 10px;
+
+}
+
 
 h2{
 	font-size: 40px;
