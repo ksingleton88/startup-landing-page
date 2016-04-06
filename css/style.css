@@ -28,13 +28,12 @@ body{
 strong{
 	color: #000000;
 }
-li{
+.links li{
 	overflow: hidden;
-	list-style-type: none;
 	float: left;
 	display: inline-block;
 	margin: 20px;
-	margin: 0; /* Introducing Karma text moves to the left if this is deleted but than "list" styles are crunched together. WHY is the karm page being effected by list styles??*/
+	 /* Introducing Karma text moves to the left if this is deleted but than "list" styles are crunched together. WHY is the karm page being effected by list styles??*/
 	padding: 0; /* cannot edit spacing without effecting Karma text*/
 	border: 0;
 	font-size: 100%;
@@ -42,7 +41,9 @@ li{
 	vertical-align: baseline;
 }
 
-
+li{
+	list-style-type: none;
+}
 
 .logo{
 	width: 4%;
@@ -78,6 +79,8 @@ li{
 
 .content{
 	overflow: hidden;
+	display: block;
+	width: 100%;
 }
 
 button{
@@ -107,35 +110,48 @@ button:hover{
 	color: #000000;
 	text-align: center;
 	width: 100%;
-	height: 40rem;
+	height: 25rem;
 
 }
 
 .cases{
 	text-align: center;
+	font-family: 'Roboto Condensed', sans-serif;
 
 }
 
 .devices{
-	margin: 0 auto;
-	width: 50%;
-	padding: 20px;
+	text-align: center;
+	
+}
+
+.devices img{
+	width: 127px;
+	display: inline-block;	
+
+}
+
+.devices li{
+	display: inline-block;
+	margin: 3%;
 }
 
 .icons{
-	display: inline-block;
-	margin: 0 auto;
-	color: #000000;
-	text-align: center;
-	width: 40%;
-	
+	margin-right: 3%;
 }
+.icons li{
+	display: inline-block;
+	color: #000000;
+}
+
 
 
 .content-social{
 	width: 100%;
 	height:400px;
 	color: #000000;
+	display: inline-block;
+	text-align: center;
 	
 }
 
@@ -145,6 +161,13 @@ button:hover{
 	margin: 10px; 
 	border-radius: 10px;
 
+
+}
+
+.content-social hr{
+    border: 0;
+    border-top: 1px solid #eaebec;
+    margin: 1.313rem 0;
 }
 
 
