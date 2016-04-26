@@ -25,25 +25,29 @@ body{
 	-webkit-font-smoothing: antialiased;
 }
 
+.links a{
+	padding: 8px;
+}
+
 strong{
 	color: #000000;
 }
-.links li{
+li{
 	overflow: hidden;
+	list-style-type: none;
 	float: left;
 	display: inline-block;
 	margin: 20px;
-	 /* Introducing Karma text moves to the left if this is deleted but than "list" styles are crunched together. WHY is the karm page being effected by list styles??*/
+	margin: 0; /* Introducing Karma text moves to the left if this is deleted but than "list" styles are crunched together. WHY is the karm page being effected by list styles??*/
 	padding: 0; /* cannot edit spacing without effecting Karma text*/
 	border: 0;
 	font-size: 100%;
 	font: inherit;
 	vertical-align: baseline;
+
 }
 
-li{
-	list-style-type: none;
-}
+
 
 .logo{
 	width: 4%;
@@ -61,6 +65,7 @@ li{
 	background-size: cover;
 	background-position: 0 bottom;
 	height: 40rem;
+
 }
 
 
@@ -79,8 +84,8 @@ li{
 
 .content{
 	overflow: hidden;
-	display: block;
 	width: 100%;
+	text-align: center;
 }
 
 button{
@@ -95,9 +100,7 @@ button{
 	display: inline-block;
 	margin: 0 auto;
 	margin-top: 3%;
-	margin-left: 43%;
 	cursor: default;
-	text-align: center;
 
 }
 
@@ -110,66 +113,58 @@ button:hover{
 	color: #000000;
 	text-align: center;
 	width: 100%;
-	height: 25rem;
+/*	height: 30rem;*/
 
 }
 
 .cases{
 	text-align: center;
-	font-family: 'Roboto Condensed', sans-serif;
 
 }
 
 .devices{
-	text-align: center;
-	
+	margin: 0 auto;
+	padding: 0;
+}
+
+
+
+.devices li{
+	padding: 30px;
+	float: none;
 }
 
 .devices img{
-	width: 127px;
-	display: inline-block;	
-
-}
-
-.devices li{
-	display: inline-block;
-	margin: 3%;
+	height: 200px;
 }
 
 .icons{
-	margin-right: 3%;
-}
-.icons li{
 	display: inline-block;
+	margin: 0 auto;
 	color: #000000;
+	text-align: center;
+	padding: 0;
+	
 }
-
 
 
 .content-social{
 	width: 100%;
-	height:400px;
 	color: #000000;
-	display: inline-block;
 	text-align: center;
 	
 }
-
 .fa-stack{
 	border: solid;
 	border-color: #000000;
 	margin: 10px; 
 	border-radius: 10px;
 
-
 }
 
-.content-social hr{
-    border: 0;
-    border-top: 1px solid #eaebec;
-    margin: 1.313rem 0;
+.copy{
+	margin-left: 0 auto;
 }
-
 
 h2{
 	font-size: 40px;
@@ -189,4 +184,70 @@ a:active{color: #808080;
 text-decoration: none;}/* - a link the moment it is clicked*/
 
 
+@media (max-width: 1220px) {
+	.logo {
+		margin-left: 3%;
+	}
 
+	.content-intro{
+	height: 38rem;
+	}
+
+	.links a{
+	padding: 2px;
+	}
+	
+	
+
+}
+
+@media (max-width: 768px) {
+	.links {
+		margin-right: 50px;
+	}
+	
+	.devices img{
+		width: 80%;
+		height: 150px;
+	}
+	.devices h3{
+		font-size: 14px;
+	}
+	.devices li{
+		padding: 10px;
+	}
+}
+
+@media (max-width: 650px) {
+	.links{
+		font-size: 12px;
+	}
+	.devices img{
+		width: 60%;
+		height: 100px;
+	}
+	.devices h3{
+		font-size: 12px;
+	}
+	.devices li{
+		padding: 10px;
+	}
+}
+
+@media (max-width: 540px) {
+	.links{
+		font-size: 10px;
+		margin: 0px;
+	}
+	.devices img{
+		width: 80%;
+		height: 130px;
+	}
+	.devices h3{
+		font-size: 14px;
+	}
+	.devices li{
+		padding: 5px;
+		display: block;
+	}
+}
